@@ -1,0 +1,221 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <title>Tarjeta de Presentación DEMI</title> 
+    <!-- Carga de Tailwind CSS --> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- Configuración de Tailwind para usar la fuente Inter y colores 
+personalizados --> 
+    <script> 
+        tailwind.config = { 
+            theme: { 
+                extend: { 
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'], 
+                    }, 
+                    colors: { 
+                        // Colores personalizados de DEMI 
+                        demiBlue: '#014785',      // Color principal: 
+RGB(1, 71, 133) 
+                        demiBlueLight: '#326496', // Un tono más claro 
+para bordes/iconos 
+                        demiBlueDark: '#003264',  // Un tono más 
+oscuro para hover/texto 
+                    } 
+                } 
+            } 
+        } 
+    </script> 
+    <style> 
+        /* Estilos personalizados para la fuente Inter */ 
+        @import 
+url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;6
+ 00;700;800;900&display=swap'); /* Incluye pesos más gruesos */ 
+    </style> 
+</head> 
+<body class="bg-gradient-to-br from-demiBlue to-demiBlueDark 
+min-h-screen flex items-center justify-center p-4 font-sans"> 
+ 
+    <!-- Contenedor principal de la tarjeta --> 
+    <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full 
+transform transition-all duration-300 hover:scale-105"> 
+        <div class="flex flex-col items-center text-center"> 
+ 
+            <!-- Imagen del logo de la empresa --> 
+            <!-- URL de tu logo de Google Drive. Asegúrate de que sea 
+un PNG transparente si no quieres fondo. --> 
+            <img 
+src="https://drive.google.com/uc?export=download&id=1H3xjFOELEFsWlCRZx
+ FrgEy138eNHI9Fs" alt="Logo de DEMI" class="max-w-full h-auto mx-auto 
+mb-6 object-contain"> 
+ 
+            <!-- Nombre de la Empresa (DEMI) - Más grande y con el 
+color de la marca --> 
+            <h1 class="text-5xl font-black text-demiBlue 
+mb-1">DEMI</h1> 
+            <!-- Subtítulo / Actividad Principal - Color demiBlue y 
+más grueso --> 
+            <h3 class="text-2xl text-demiBlue font-bold 
+mb-4">Desazolves ecológicos y mantenimiento industrial</h3> 
+            <!-- Eslogan/Descripción de la Empresa - Más pequeño y con 
+peso de fuente medio --> 
+            <p class="text-sm font-medium text-gray-600 mb-6"> 
+                Somos una empresa dedicada a satisfacer las 
+necesidades empresariales del ámbito ambiental, industrial y de 
+servicios relacionados con el aspecto sanitario entregando soluciones 
+ecológicas 
+            </p> 
+ 
+            <!-- Sección de Contacto (iconos y texto ahora son 
+clicables) --> 
+            <div class="w-full text-left space-y-4 mb-8"> 
+                <a href="tel:+524611201746" class="flex items-center 
+text-gray-800 hover:text-demiBlueDark transition-colors duration-200"> 
+                    <!-- Icono de teléfono principal (imagen de Google 
+Drive) --> 
+                    <img 
+src="https://drive.google.com/uc?export=download&id=1PHw5g5EPw6n1FZfTB
+ JDvV5dxeveIAE70" alt="Icono de Teléfono" class="w-6 h-6 mr-3 
+object-contain"> 
+                    <span class="text-sm font-medium">+52 461 120 
+1746</span> 
+                </a> 
+                <a href="mailto:ventas@demimx.com" class="flex 
+items-center text-gray-800 hover:text-demiBlueDark transition-colors 
+duration-200"> 
+                    <!-- Icono de correo (imagen de Google Drive) --> 
+                    <img 
+src="https://drive.google.com/uc?export=download&id=1kESxkfesBy3fSp-Hn
+ 1pSTzzwE5PNZoEs" alt="Icono de Correo" class="w-6 h-6 mr-3 
+object-contain"> 
+                    <span class="text-sm 
+font-medium">ventas@demimx.com</span> 
+                </a> 
+                <a href="https://demimx.com/" target="_blank" 
+class="flex items-center text-gray-800 hover:text-demiBlueDark 
+transition-colors duration-200"> 
+                    <!-- Icono de sitio web (imagen de Google Drive) --> 
+                    <img 
+src="https://drive.google.com/uc?export=download&id=1HsEHcX63q0rzz_hGu
+ KWl-3KehEgOflJY" alt="Icono de Sitio Web" class="w-6 h-6 mr-3 
+object-contain"> 
+                    <span class="text-sm 
+font-medium">demimx.com</span> 
+                </a> 
+            </div> 
+ 
+            <!-- Botones de Redes Sociales y Emergencia --> 
+            <div class="flex justify-center space-x-4 mb-8"> 
+                <!-- Enlace a Facebook --> 
+                <a href="https://www.facebook.com/share/1ZFVSnWRPX/" 
+target="_blank" class="bg-blue-700 text-white p-3 rounded-full 
+hover:bg-blue-800 transition-colors duration-200 shadow-md"> 
+                    <svg class="w-6 h-6" fill="currentColor" 
+viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0H1.325C.593 0 
+0 .593 0 1.325v21.35C0 23.407.593 24 1.325 
+24h11.397V14.707h-3.84v-4.47h3.84v-3.32c0-3.79 2.316-5.854 5.698-5.854 
+1.628 0 3.03.12 3.435.175v3.953l-2.344.002c-1.832 0-2.186.87-2.186 
+2.148v2.81h4.42l-.715 4.47h-3.705V24h6.08C23.407 24 24 23.407 24 
+22.675V1.325C24 .593 23.407 0 22.675 0z"/></svg> 
+                </a> 
+                <!-- Botón de Emergencia (icono de teléfono rojo) --> 
+                <a href="tel:+524612642977" class="bg-red-600 
+text-white p-3 rounded-full hover:bg-red-700 transition-colors 
+duration-200 shadow-md"> 
+                    <svg class="w-6 h-6" fill="currentColor" 
+viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 
+10.79a15.82 15.82 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 
+2.33.57 3.57.57a1 1 0 011 1v3a1 1 0 01-1 1c-9.66 
+0-17.5-7.84-17.5-17.5a1 1 0 011-1h3a1 1 0 011 1c0 1.25.2 2.45.57 
+3.57a1 1 0 01-.24 1.02l-2.2 2.2z"/></svg> 
+                </a> 
+            </div> 
+ 
+            <!-- Contenedor de botones principales --> 
+            <div class="flex flex-col sm:flex-row justify-center 
+space-y-4 sm:space-y-0 sm:space-x-4"> 
+                <!-- Botón para visitar el sitio web --> 
+                <a href="https://demimx.com/" target="_blank" 
+class="bg-demiBlue text-white px-8 py-3 rounded-full text-lg 
+font-semibold hover:bg-demiBlueDark transition-colors duration-200 
+shadow-lg transform hover:-translate-y-1"> 
+                    Visitar Sitio Web 
+                </a> 
+                <!-- Botón para agregar contacto --> 
+                <button id="addContactBtn" class="bg-green-500 
+text-white px-8 py-3 rounded-full text-lg font-semibold 
+hover:bg-green-600 transition-colors duration-200 shadow-lg transform 
+hover:-translate-y-1"> 
+                    Agregar Contacto 
+                </button> 
+            </div> 
+            <p id="messageBox" class="mt-4 text-sm text-gray-700 
+hidden"> 
+                ¡Contacto guardado! 
+            </p> 
+        </div> 
+    </div> 
+ 
+    <script> 
+        
+document.getElementById('addContactBtn').addEventListener('click', 
+function() { 
+            // Datos de la empresa para el vCard 
+            const companyName = "DEMI"; // Nombre corto para el vCard 
+            const title = "Desazolves ecológicos y mantenimiento 
+industrial"; // Título/Subtítulo 
+            const description = "Somos una empresa dedicada a 
+satisfacer las necesidades empresariales del ámbito ambiental, 
+industrial y de servicios relacionados con el aspecto sanitario 
+entregando soluciones ecológicas"; // Descripción detallada 
+            const phone = "+52 461 120 1746"; 
+            const emergencyPhone = "+52 461 264 2977"; // Número de 
+emergencia 
+            const email = "ventas@demimx.com"; 
+            const website = "https://demimx.com/"; 
+ 
+            // Crea el contenido del archivo vCard 
+            const vcardContent = `BEGIN:VCARD 
+VERSION:3.0 
+FN:${companyName} 
+ORG:${companyName} 
+TITLE:${title} 
+NOTE:${description} 
+TEL;TYPE=WORK,VOICE:${phone} 
+TEL;TYPE=CELL,VOICE:${emergencyPhone} 
+EMAIL;TYPE=PREF,INTERNET:${email} 
+URL:${website} 
+END:VCARD`; 
+ 
+            // Crea un Blob con el contenido del vCard 
+            const blob = new Blob([vcardContent], { type: 
+'text/vcard;charset=utf-8' }); 
+            const url = URL.createObjectURL(blob); 
+ 
+            // Crea un enlace temporal y simula un clic para descargar 
+el archivo 
+            const a = document.createElement('a'); 
+            a.href = url; 
+            a.download = `${companyName.replace(/\s/g, '_')}.vcf`; // 
+Nombre del archivo 
+            document.body.appendChild(a); 
+            a.click(); 
+ 
+            // Limpia el URL del objeto después de la descarga 
+            URL.revokeObjectURL(url); 
+            document.body.removeChild(a); 
+ 
+            // Muestra un mensaje de éxito 
+            const messageBox = document.getElementById('messageBox'); 
+            messageBox.textContent = '¡Contacto guardado!'; 
+            messageBox.classList.remove('hidden'); 
+            setTimeout(() => { 
+                messageBox.classList.add('hidden'); 
+            }, 3000); // Oculta el mensaje después de 3 segundos 
+        }); 
+    </script> 
+</body> 
+</html> 
